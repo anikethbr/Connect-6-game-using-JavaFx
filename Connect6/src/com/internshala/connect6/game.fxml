@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.internshala.connect6.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="311.0" minWidth="214.0" prefWidth="218.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="25.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></Pane>
+        <Pane fx:id="insertedDiscsPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></Pane>
+        <VBox prefHeight="481.0" prefWidth="317.0" style="-fx-background-color: #2B324C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <Label prefHeight="17.0" prefWidth="221.0" text="Player One disc Color:" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin></Label>
+                <ColorPicker fx:id="playerOneColor" maxHeight="-Infinity" prefHeight="25.0" prefWidth="245.0">
+                    <value>
+                        <Color />
+                    </value>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin></ColorPicker>
+                <Label prefHeight="17.0" prefWidth="145.0" text="Player Two disc Color:" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font></Label>
+                <ColorPicker fx:id="playerTwoColor" maxHeight="-Infinity" prefHeight="25.0" prefWidth="218.0">
+                    <value>
+                        <Color red="1.0" />
+                    </value>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                    </VBox.margin></ColorPicker>
+                <TextField fx:id="playerOneTextField" alignment="CENTER" prefHeight="25.0" prefWidth="169.0" promptText=" Player One Name">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="35.0" />
+                    </VBox.margin></TextField>
+                <TextField fx:id="playerTwoTextField" alignment="CENTER" promptText=" Player Two Name">
+                    <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                    </VBox.margin></TextField>
+                <Button fx:id="setNamesButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Set Names">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                    </VBox.margin></Button>
+                <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="43.0" prefWidth="301.0" text="Player one" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="29.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="70.0" />
+                    </VBox.margin>
+                </Label>
+                <Label alignment="CENTER" prefHeight="38.0" prefWidth="338.0" text="Turn" textFill="WHITE">
+                    <font>
+                        <Font size="26.0" />
+                    </font></Label>
+                <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+        </VBox>
+    </children>
+</GridPane>
